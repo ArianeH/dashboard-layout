@@ -65,3 +65,54 @@
 .checkbox-inline {
   padding-top: 7px;
 }
+
+/*SIDE NAVBAR SETTINGS*/
+.side-navbar-actions {
+  margin-right: 0px;
+}
+.side-navbar-actions > .fa {
+  color: orange;
+  font-size: 20px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  text-align: center;
+  padding: 10px 0px;
+  margin-top: 25px;
+}
+.side-navbar {
+  background-color: #5e5e5e;
+  height: 100vh;
+  padding: 0px;
+}
+.side-navbar-actions > .fa:not(.fa-phone) {
+  border-right: 1px solid grey;
+}
+.accordion-container {
+  position: relative;
+}
+.accordion-content {
+  display: none;
+  margin-left: 20px;
+}
+.fa-angle-left, .fa-angle-down {
+  position: absolute;
+  right: 10px;
+}
+.side-navbar, .accordion-toggle, .accordion-toggle:focus {
+  color: #9e9e9e;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.accordion-toggle:hover {
+  text-decoration: none;
+}
+.accordion-toggle:active, .open, .open:focus {
+  color: white;
+  text-decoration: none;
+}
+.accordion-link, .side-navbar-heading {
+  padding: 10px;
+}
+.accordion-link:hover, .accordion-link:focus, .accordion-link:active, .open, .open:focus {
+  background-color: grey;
+}
