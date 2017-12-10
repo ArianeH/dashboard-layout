@@ -50,3 +50,18 @@
 .col-form-label-center {
   text-align: center;
 }
+.col-form-label-right {
+  text-align: right;
+  margin-top: 7px;
+}
+.form-actions > .heading-btn > .fa {
+  color: orange;
+  margin-right: 5px;
+}
+.form-control-plaintext {
+  background-color: #5e5e5e;
+  border: none;
+}
+.checkbox-inline {
+  padding-top: 7px;
+}
