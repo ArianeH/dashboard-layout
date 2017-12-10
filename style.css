@@ -47,3 +47,6 @@
 .btn-form-group {
   position: relative;
 }
+.col-form-label-center {
+  text-align: center;
+}
