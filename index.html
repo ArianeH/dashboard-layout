@@ -18,7 +18,7 @@
         <img src="logo-screenshot.jpg" alt="Dashboard Logo" class="dashboard-logo">
         <h1>Dashboard</h1>
       </div>
-      <div class="col-xs-9">
+      <div id="navbar-column" class="col-xs-9">
 
         <nav class="navbar">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
           </button>
 
           <form class="form-inline search-form">
-            <input class="form-control search-field" type="search" placeholder="Search here ..." aria-label="Search">
+            <input id="search-field" class="form-control" type="search" placeholder="Search here ..." aria-label="Search">
             <button class="btn search-btn" type="submit">
               <i class="fa fa-search" aria-hidden="true"></i>
             </button>
@@ -35,7 +35,7 @@
           <!-- Right Navigation -->
           <div class="navbar-right hidden-xs hidden-sm">
             <div id="time"></div>
-            <a href="" class="navbar-item navbar-link"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
+            <a href="#" class="navbar-item navbar-link"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
 
             <!-- Profile picture with dropdown list -->
             <div class="navbar-item">
@@ -52,6 +52,7 @@
               <div class="user-name">Angila Deo</div>
               <div class="user-function">Admin</div>
             </div>
+            <a href="#" class="navbar-item navbar-link"><i class="fa fa-comments-o" aria-hidden="true"></i></a>
           </div>
         </nav>
       </div>
@@ -67,9 +68,9 @@
               <i class="fa fa-bar-chart" aria-hidden="true"></i>Graphs<i class="indicator fa fa-angle-left" aria-hidden="true"></i>
             </div>
           </a>
-          <div class="accordion-content">
-            Placeholder
-          </div>
+          <ul class="accordion-content">
+            <li>Placeholder</li>
+          </ul>
         </div>
         <div class="accordion-container">
           <a href="#" class="accordion-toggle">
@@ -77,9 +78,9 @@
               <i class="fa fa-envelope" aria-hidden="true"></i>Mailbox<i class="indicator fa fa-angle-left" aria-hidden="true"></i>
             </div>
           </a>
-          <div class="accordion-content">
-            Placeholder
-          </div>
+          <ul class="accordion-content">
+            <li>Placeholder</li>
+          </ul>
         </div>
         <div class="accordion-container">
           <a href="#" class="accordion-toggle">
@@ -87,11 +88,11 @@
               <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Forms<i class="indicator fa fa-angle-left" aria-hidden="true"></i>
             </div>
           </a>
-          <div class="accordion-content">
-            <div>Basic form</div>
-            <div>Wizard</div>
-            <div>File upload</div>
-          </div>
+          <ul class="accordion-content">
+            <li>Basic form</li>
+            <li>Wizard</li>
+            <li>File upload</li>
+          </ul>
         </div>
         <div class="accordion-container">
           <a href="#" class="accordion-toggle">
@@ -99,9 +100,9 @@
               <i class="fa fa-table" aria-hidden="true"></i>Tables<i class="indicator fa fa-angle-left" aria-hidden="true"></i>
             </div>
           </a>
-          <div class="accordion-content">
-            Placeholder
-          </div>
+          <ul class="accordion-content">
+            <li>Placeholder</li>
+          </ul>
         </div>
         <div class="accordion-container">
           <a href="#" class="accordion-toggle">
@@ -109,9 +110,9 @@
               <i class="fa fa-files-o" aria-hidden="true"></i>Other pages<i class="indicator fa fa-angle-left" aria-hidden="true"></i>
             </div>
           </a>
-          <div class="accordion-content">
-            Placeholder
-          </div>
+          <ul class="accordion-content">
+            <li>Placeholder</li>
+          </ul>
         </div>
         <div class="accordion-container">
           <a href="#" class="accordion-toggle">
@@ -119,9 +120,9 @@
               <i class="fa fa-flask" aria-hidden="true"></i>UI Elements<i class="indicator fa fa-angle-left" aria-hidden="true"></i>
             </div>
           </a>
-          <div class="accordion-content">
-            Placeholder
-          </div>
+          <ul class="accordion-content">
+            <li>Placeholder</li>
+          </ul>
         </div>
         <div class="accordion-container">
           <a href="#" class="accordion-toggle">
@@ -129,9 +130,9 @@
               <i class="fa fa-sitemap" aria-hidden="true"></i>Menu levels<i class="indicator fa fa-angle-left" aria-hidden="true"></i>
             </div>
           </a>
-          <div class="accordion-content">
-            Placeholder
-          </div>
+          <ul class="accordion-content">
+            <li>Placeholder</li>
+          </ul>
         </div>
         <div class="row side-navbar-actions">
           <i class="col-xs-3 fa fa-lock" aria-hidden="true"></i>
@@ -142,14 +143,16 @@
       </div>
 
       <div class="col-xs-9">
-        <span id="secondary-header">
-          <h2>Basic Forms</h2>
-        </span>
-        <span class="form-actions">
-          <button class="heading-btn"><i class="fa fa-plus" aria-hidden="true"></i>Add widget</button>
-          <button class="heading-btn"><i class="fa fa-share" aria-hidden="true"></i>Share</button>
-          <button class="heading-btn"><i class="fa fa-envelope" aria-hidden="true"></i>Email</button>
-        </span>
+        <div class="form-heading-section">
+          <span id="secondary-header">
+            <h2>Basic forms</h2>
+          </span>
+          <span class="form-actions">
+            <button class="heading-btn"><i class="fa fa-plus" aria-hidden="true"></i>Add widget</button>
+            <button class="heading-btn"><i class="fa fa-share" aria-hidden="true"></i>Share</button>
+            <button class="heading-btn"><i class="fa fa-envelope" aria-hidden="true"></i>Email</button>
+          </span>
+        </div>
 
         <div class="row">
           <div class="col-xs-6">
@@ -234,7 +237,7 @@
               <div class="form-group row">
                 <label for="exampleInputNormal" class="col-sm-2 col-form-label-right">Placeholder</label>
                 <div class="col-sm-10">
-                  <input type="placeholder" class="form-control" id="examplePlaceholder" aria-describedby="placeholder" placeholder="Placeholder">
+                  <input type="placeholder" class="form-control" id="examplePlaceholder" aria-describedby="placeholder" placeholder="placeholder">
                 </div>
               </div>
               <fieldset disabled>
@@ -271,7 +274,7 @@
                 </label>
               </div>
               <div class="row">
-                <label for="inlineCheckboxes" class="col-sm-2 col-form-label-right">Inline checkboxes</label>
+              <label for="inlineCheckboxes" class="col-sm-2 col-form-label-right inline-checkbox-label">Inline checkboxes</label>
                 <div class="col-sm-10">
                   <div class="form-check checkbox-inline">
                     <label class="form-check-label">
