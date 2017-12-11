@@ -12,19 +12,48 @@
   crossorigin="anonymous"></script>
 </head>
 <body>
-
   <div class="container">
-
     <div class="row">
       <div class="col-xs-3" id="main-header">
-        <h1><i class="fa fa-line-chart" aria-hidden="true"></i>Dashboard</h1>
+        <img src="logo-screenshot.jpg" alt="Dashboard Logo" class="dashboard-logo">
+        <h1>Dashboard</h1>
       </div>
       <div class="col-xs-9">
 
         <nav class="navbar">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
+          </button>
 
+          <form class="form-inline search-form">
+            <input class="form-control search-field" type="search" placeholder="Search here ..." aria-label="Search">
+            <button class="btn search-btn" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+
+          <!-- Right Navigation -->
+          <div class="navbar-right hidden-xs hidden-sm">
+            <div id="time"></div>
+            <a href="" class="navbar-item navbar-link"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
+
+            <!-- Profile picture with dropdown list -->
+            <div class="navbar-item">
+              <div class="dropdown">
+                <img src="avatar-screenshot.jpg" class="avatar dropdown-toggle" id="navbar-menu" data-toggle="dropdown">
+                <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu">
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Log Out</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="user-name">Angila Deo</div>
+              <div class="user-function">Admin</div>
+            </div>
+          </div>
         </nav>
-
       </div>
     </div>
 
@@ -104,8 +133,12 @@
             Placeholder
           </div>
         </div>
-
-
+        <div class="row side-navbar-actions">
+          <i class="col-xs-3 fa fa-lock" aria-hidden="true"></i>
+          <i class="col-xs-3 fa fa-download" aria-hidden="true"></i>
+          <i class="col-xs-3 fa fa-globe" aria-hidden="true"></i>
+          <i class="col-xs-3 fa fa-phone" aria-hidden="true"></i>
+        </div>
       </div>
 
       <div class="col-xs-9">
@@ -260,11 +293,8 @@
             </form>
           </div>
         </div>
-
       </div>
-
     </div>
-
   </div>
 
   <script src="index.js"></script>
