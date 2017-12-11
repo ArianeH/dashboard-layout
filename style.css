@@ -32,6 +32,7 @@
 .navbar {
   background-color: #31323a;
   height: 65px;
+  margin-bottom: 0px;
   padding: 0px 30px;
   border-radius: 0px;
 /*  display: flex;
@@ -144,7 +145,7 @@
 
 /*FORM SECTION*/
 .form-heading-section {
-  margin-bottom: 20px;
+  margin: 20px 0px 20px 5px;
 }
 #secondary-header > h2 {
   font-size: 27px;
@@ -237,6 +238,14 @@
 .accordion-container {
   position: relative;
 }
+.accordion-tag {
+  position: absolute;
+  left: 35px;
+  top: 10px;
+}
+#accordion-icon{
+  color: white;
+}
 .accordion-content {
   display: none;
   padding-left: 25px;
@@ -267,4 +276,8 @@
 .accordion-link:hover, .accordion-link:focus, .accordion-link:active, .open, .open:focus {
   background-color: #3f3f46;
   color: white;
+}
+.accordion-link > .fa:not(.fa-angle-left):not(.fa-angle-down), .side-navbar-heading > .fa {
+  color: white;
+  font-size: 18px;
 }
