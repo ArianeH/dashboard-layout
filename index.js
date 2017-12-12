@@ -10,8 +10,20 @@ $(document).ready(function () {
   });
 
   var date = new Date();
-  var n = date.toDateString();
-  var time = date.toLocaleTimeString();
 
-  document.getElementById('time').innerHTML = n + ' ' + time;
+  var dateFormatted = $.datepicker.formatDate('DD dd MM yy', new Date());
+
+  var minutes = date.getMinutes();
+
+  if(minutes < 10) {
+    minutes = '0'  + minutes
+  }
+
+  var timeSuffix = 'pm'
+
+  if(date.getHours() < 12 ) {
+    timeSuffix = 'am'
+  }
+
+  document.getElementById('time').innerHTML = dateFormatted + ' ' + date.getHours() + '.' + minutes + timeSuffix;
 });
