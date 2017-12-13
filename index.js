@@ -1,7 +1,3 @@
-$('#main-navbar-placeholder').load('main-navbar.html');
-$('#side-navbar-placeholder').load('side-navbar.html');
-$('#form-section-placeholder').load('form-section.html');
-
 $(document).ready(function () {
 
   $('.accordion-toggle').on('click', function(){
