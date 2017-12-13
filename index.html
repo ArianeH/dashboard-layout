@@ -15,16 +15,23 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-xs-3" id="main-header">
+      <div class="col-sm-2 hidden-sm" id="main-header">
         <img src="logo-screenshot.jpg" alt="Dashboard Logo" class="dashboard-logo">
         <h1>Dashboard</h1>
       </div>
-      <div id="navbar-column" class="col-xs-9">
+      <div id="navbar-column" class="col-sm-10">
 
         <nav class="navbar">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
-          </button>
+          <select class="navbar-toggler hidden-md hidden-lg" type="button">
+            <option value="" selected="selected" class="hide-option">&#xf0c9;</option>
+            <option value="#" id="option">Graphs</option>
+            <option value="#" id="option">Mailbox</option>
+            <option value="#" id="option">Forms</option>
+            <option value="#" id="option">Tables</option>
+            <option value="#" id="option">Other Pages</option>
+            <option value="#" id="option">UI Elements</option>
+            <option value="#" id="option">Menu Levels</option>
+          </select>
 
           <form class="form-inline search-form">
             <input id="search-field" class="form-control" type="search" placeholder="Search here ..." aria-label="Search">
@@ -33,12 +40,9 @@
             </button>
           </form>
 
-          <!-- Right Navigation -->
-          <div class="navbar-right hidden-xs hidden-sm">
-            <div id="time"></div>
+          <div class="navbar-right">
+            <div id="time" class="hidden-xs"></div>
             <a href="#" class="navbar-item navbar-link"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
-
-            <!-- Profile picture with dropdown list -->
             <div class="navbar-item">
               <div class="dropdown">
                 <img src="avatar-screenshot.jpg" class="avatar dropdown-toggle" id="navbar-menu" data-toggle="dropdown">
@@ -60,12 +64,11 @@
     </div>
 
     <div class="row">
-      <div class="col-xs-3 side-navbar">
+      <div class="col-sm-2 hidden-sm" id="side-navbar">
         <div class="side-navbar-heading">
-        <i class="fa fa-home" aria-hidden="true"></i>
-        <div class="accordion-tag">Dashboard</div>
+          <i class="fa fa-home" aria-hidden="true"></i>
+          <div class="accordion-tag">Dashboard</div>
         </div>
-
         <div class="accordion-container">
           <a href="#" class="accordion-toggle">
             <div class="accordion-link">
@@ -75,7 +78,7 @@
             </div>
           </a>
           <ul class="accordion-content">
-            <li>Placeholder</li>
+            <a href="#"><li>Placeholder</li></a>
           </ul>
         </div>
         <div class="accordion-container">
@@ -87,7 +90,7 @@
             </div>
           </a>
           <ul class="accordion-content">
-            <li>Placeholder</li>
+            <a href="#"><li>Placeholder</li></a>
           </ul>
         </div>
         <div class="accordion-container">
@@ -99,9 +102,9 @@
             </div>
           </a>
           <ul class="accordion-content">
-            <li>Basic form</li>
-            <li>Wizard</li>
-            <li>File upload</li>
+            <a href="#"><li>Basic form</li></a>
+            <a href="#"><li>Wizard</li></a>
+            <a href="#"><li>File upload</li></a>
           </ul>
         </div>
         <div class="accordion-container">
@@ -113,7 +116,7 @@
             </div>
           </a>
           <ul class="accordion-content">
-            <li>Placeholder</li>
+            <a href="#"><li>Placeholder</li></a>
           </ul>
         </div>
         <div class="accordion-container">
@@ -125,7 +128,7 @@
             </div>
           </a>
           <ul class="accordion-content">
-            <li>Placeholder</li>
+            <a href="#"><li>Placeholder</li></a>
           </ul>
         </div>
         <div class="accordion-container">
@@ -137,7 +140,7 @@
             </div>
           </a>
           <ul class="accordion-content">
-            <li>Placeholder</li>
+            <a href="#"><li>Placeholder</li></a>
           </ul>
         </div>
         <div class="accordion-container">
@@ -149,18 +152,18 @@
             </div>
           </a>
           <ul class="accordion-content">
-            <li>Placeholder</li>
+            <a href="#"><li>Placeholder</li></a>
           </ul>
         </div>
         <div class="row side-navbar-actions">
-          <i class="col-xs-3 fa fa-lock" aria-hidden="true"></i>
-          <i class="col-xs-3 fa fa-download" aria-hidden="true"></i>
-          <i class="col-xs-3 fa fa-globe" aria-hidden="true"></i>
-          <i class="col-xs-3 fa fa-phone" aria-hidden="true"></i>
+          <a href="#"><i class="col-sm-3 fa fa-lock" aria-hidden="true"></i></a>
+          <a href="#"><i class="col-sm-3 fa fa-download" aria-hidden="true"></i></a>
+          <a href="#"><i class="col-sm-3 fa fa-globe" aria-hidden="true"></i></a>
+          <a href="#"><i class="col-sm-3 fa fa-phone" aria-hidden="true"></i></a>
         </div>
       </div>
 
-      <div class="col-xs-9">
+      <div id="form-section" class="col-sm-10">
         <div class="form-heading-section">
           <span id="secondary-header">
             <h2>Basic forms</h2>
@@ -173,7 +176,7 @@
         </div>
 
         <div class="row">
-          <div class="col-xs-6">
+          <div class="col-md-6 col-sm-12">
             <form class="form">
               <div class="form-heading">Basic Form</div>
               <div class="form-group">
@@ -195,7 +198,7 @@
               <button type="submit" class="btn btn-warning btn-log-in">Log in</button>
             </form>
           </div>
-          <div class="col-xs-6">
+          <div class="col-md-6 col-sm-12">
             <form class="form">
               <div class="form-heading">Horizontal Form</div>
               <div class="form-description">Sign in today for more experience</div>
@@ -228,7 +231,7 @@
         </div>
 
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-md-12">
             <form class="form">
               <div class="form-group row">
                 <label for="exampleInputNormal" class="col-sm-2 col-form-label-right">Normal</label>
@@ -292,7 +295,7 @@
                 </label>
               </div>
               <div class="row">
-              <label for="inlineCheckboxes" class="col-sm-2 col-form-label-right inline-checkbox-label">Inline checkboxes</label>
+                <label for="inlineCheckboxes" class="col-sm-2 col-form-label-right inline-checkbox-label">Inline checkboxes</label>
                 <div class="col-sm-10">
                   <div class="form-check checkbox-inline">
                     <label class="form-check-label">

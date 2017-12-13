@@ -26,4 +26,5 @@ $(document).ready(function () {
   }
 
   document.getElementById('time').innerHTML = dateFormatted + ' ' + date.getHours() + '.' + minutes + timeSuffix;
+
 });
