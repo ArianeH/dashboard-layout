@@ -1,0 +1,30 @@
+.container {
+  background-color: #2a2d31;
+  height: 100%;
+  width: 100%;
+}
+#main-header {
+  position: relative;
+  height: 55px;
+  background-color: #fabc3c;
+  color: white;
+  padding: 6px 0px 10px 60px;
+}
+#main-header > h1 {
+  position: absolute;
+  left: 48px;
+  bottom: 10px;
+  margin-top: 0px;
+  font-size: 23px;
+  letter-spacing: -1px;
+}
+.dashboard-logo {
+  position: absolute;
+  left: 30px;
+  bottom: 25px;
+  height: 20px;
+  width: 18px;
+}
+.side-navbar-col {
+  padding: 0px;
+}
